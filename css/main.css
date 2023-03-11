@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    height: 100vh;
+
+}
+
+.login-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content {
+    min-width: 40%;
+    min-height: 30%;
+
+    background-color: rgb(139, 208, 35);
+    padding: 48px 32px;
+    border-radius: 8px;
+}
+
+.modal {
+    position: fixed;
+
+
+}
+
+.modal.hidden {
+    display: none;
+}
