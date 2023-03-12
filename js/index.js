@@ -4,16 +4,17 @@ const modalOverlay = document.querySelector(".modal .overlay");
 const modalCloseIcon = document.querySelector(".modal-content .close");
 
 const isModalVisible = () => !modal.classList.contains("hidden");
-const escHandler = (e) => {
-  // alert(e.code);
 
-  if (e.code === "Escape") closeModal();
+const escHandler = (e) => {
+  if (isModalVisible() && e.code === "Escape") closeModal();
 };
+
 const openModal = () => {
   if (!isModalVisible()) modal.classList.remove("hidden");
 
   document.addEventListener("keydown", escHandler);
 };
+
 const closeModal = () => {
   if (isModalVisible()) modal.classList.add("hidden");
 
