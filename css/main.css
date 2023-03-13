@@ -10,17 +10,40 @@ h2 {
     margin: 0;
 }
 
-.login-button {
+form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+input {
+    padding: 4px 12px;
+    border-radius: 4px;
+    border-width: 0.5px;
+}
+
+button {
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
+
+}
+
+#submit-login-button {
+    margin-top: 24px;
+}
+
+.error {
+    color: red;
+    margin-top: 8px;
 }
 
 .modal {
     position: fixed;
 }
 
-.modal.hidden {
+.hidden {
     display: none;
 }
 
@@ -46,7 +69,8 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.3);
+    ;
     cursor: pointer;
 }
 
